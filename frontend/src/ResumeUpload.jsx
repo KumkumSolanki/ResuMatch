@@ -48,7 +48,7 @@ function ResumeUpload({ onBack }) {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/upload-resume",
+        "https://resumatch-backend-amt0.onrender.com/upload-resume",
         {
           method: "POST",
           body: formData,
@@ -70,7 +70,7 @@ function ResumeUpload({ onBack }) {
       setLoadingRecommendations(true);
 
       const recommendationResponse = await fetch(
-          "http://127.0.0.1:8000/resume-recommendations",
+          "https://resumatch-backend-amt0.onrender.com/resume-recommendations",
           {
             method: "POST",
             headers: {
@@ -107,7 +107,7 @@ function ResumeUpload({ onBack }) {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/analyze-job-description",
+        "https://resumatch-backend-amt0.onrender.com/analyze-job-description",
         {
           method: "POST",
           headers: {
@@ -150,7 +150,7 @@ function ResumeUpload({ onBack }) {
 
     try {
       const response = await fetch(
-          "http://127.0.0.1:8000/match-resume",
+          "https://resumatch-backend-amt0.onrender.com/match-resume",
           {
             method: "POST",
             headers: {
@@ -193,7 +193,7 @@ function ResumeUpload({ onBack }) {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/match-resume",
+        "https://resumatch-backend-amt0.onrender.com/match-resume",
         {
           method: "POST",
           headers: {
@@ -230,7 +230,7 @@ function ResumeUpload({ onBack }) {
 
   try {
     const response = await fetch(
-      "http://127.0.0.1:8000/improve-resume",
+      "https://resumatch-backend-amt0.onrender.com/improve-resume",
       {
         method: "POST",
         headers: {
@@ -272,7 +272,7 @@ function ResumeUpload({ onBack }) {
 
   try {
     const response = await fetch(
-      "http://127.0.0.1:8000/rewrite-bullet",
+      "https://resumatch-backend-amt0.onrender.com/rewrite-bullet",
       {
         method: "POST",
         headers: {
@@ -310,7 +310,7 @@ console.log("Resume text:", resumeText);
 
   try {
     const response = await fetch(
-      "http://127.0.0.1:8000/recommend-job-roles",
+      "https://resumatch-backend-amt0.onrender.com/recommend-job-roles",
       {
         method: "POST",
         headers: {
